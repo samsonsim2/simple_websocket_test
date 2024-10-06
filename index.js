@@ -7,7 +7,10 @@ wss.on("connection",ws=>{
 
     ws.on("message", data=>{
         console.log(`Client has sent us : ${data}`);
-        ws.send(data.toUpperCase());
+        // const jsonObject = {
+        //     frequency:5.0
+        //   };
+        ws.send(JSON.stringify(data));
 
     })
 
