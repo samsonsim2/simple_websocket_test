@@ -14,6 +14,7 @@ let jsonObject = {
   noiseOption: 0.0,
   yRotation: 0.0,
   zRotation: 0.0,
+  scale:1.0,
 };
 wss.on("connection", function connection(ws) {
  
